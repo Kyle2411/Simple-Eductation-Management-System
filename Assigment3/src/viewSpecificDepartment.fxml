@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="741.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLSpecificDepartment">
+   <children>
+      <TableView fx:id="tvStuSpecific" layoutX="136.0" layoutY="75.0" prefHeight="195.0" prefWidth="610.0">
+         <columns>
+            <TableColumn fx:id="idColStuSpecific" prefWidth="48.79998779296875" text="ID" />
+            <TableColumn fx:id="nameColStuSpecific" prefWidth="117.59996032714844" text="Name" />
+            <TableColumn fx:id="ageColStuSpecific" prefWidth="63.20001220703125" text="Age" />
+            <TableColumn fx:id="genderColStuSpecific" prefWidth="86.4000244140625" text="Gender" />
+            <TableColumn fx:id="courseColStuSpecific" prefWidth="120.79998779296875" text="Course" />
+            <TableColumn fx:id="semesterColStuSpecific" prefWidth="95.99993896484375" text="Semester" />
+            <TableColumn fx:id="departmentIDColStuSpecific" prefWidth="72.0" text="DeptID" />
+         </columns>
+         <effect>
+            <InnerShadow height="2.0" radius="0.5" width="2.0" />
+         </effect>
+      </TableView>
+      <TableView fx:id="tvTeachSpecific" layoutX="135.0" layoutY="291.0" prefHeight="211.0" prefWidth="610.0">
+         <columns>
+            <TableColumn fx:id="idColTeachSpecific" prefWidth="42.4000244140625" text="ID" />
+            <TableColumn fx:id="nameColTeachSpecific" prefWidth="91.99998474121094" text="Name" />
+            <TableColumn fx:id="ageColTeachSpecific" prefWidth="46.39996337890625" text="Age" />
+            <TableColumn fx:id="genderColTeachSpecific" prefWidth="69.60003662109375" text="Gender" />
+            <TableColumn fx:id="specialtyColTeachSpecific" prefWidth="78.4000244140625" text="Specialty" />
+            <TableColumn fx:id="degreeColTeachSpecific" prefWidth="75.0" text="Degree" />
+            <TableColumn fx:id="salaryColTeachSpecific" prefWidth="80.79998779296875" text="Salary" />
+            <TableColumn fx:id="departmentIDColTeachSpecific" prefWidth="63.20001220703125" text="DeptID" />
+            <TableColumn fx:id="deanColTeachSpecific" prefWidth="72.0" text="Dean" />
+         </columns>
+         <effect>
+            <InnerShadow height="2.0" radius="0.5" width="2.0" />
+         </effect>
+      </TableView>
+      <TableView fx:id="tvStaffSpecific" layoutX="126.0" layoutY="523.0" prefHeight="202.0" prefWidth="622.0">
+         <columns>
+            <TableColumn fx:id="idColStaffSpecific" prefWidth="44.79998779296875" text="ID" />
+            <TableColumn fx:id="nameColStaffSpecific" prefWidth="106.40000915527344" text="Name" />
+            <TableColumn fx:id="ageColStaffSpecific" prefWidth="63.20001220703125" text="Age" />
+            <TableColumn fx:id="genderColStaffSpecific" prefWidth="77.5999755859375" text="Gender" />
+            <TableColumn fx:id="dutyColStaffSpecific" prefWidth="101.60003662109375" text="Duty" />
+            <TableColumn fx:id="workloadColStaffSpecific" prefWidth="81.5999755859375" text="Workload" />
+            <TableColumn fx:id="salaryColStaffSpecific" minWidth="0.79998779296875" prefWidth="82.39996337890625" text="Salary" />
+            <TableColumn fx:id="departmentIDColStaffSpecific" prefWidth="72.800048828125" text="DeptID" />
+         </columns>
+         <effect>
+            <InnerShadow height="2.0" radius="0.5" width="2.0" />
+         </effect>
+      </TableView>
+      <Button fx:id="backToViewDepartmentBtn" layoutX="654.0" layoutY="17.0" mnemonicParsing="false" onAction="#mainSpecificDepMenuButton" prefHeight="37.0" prefWidth="90.0" text="Back">
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="292.0" layoutY="8.0" prefHeight="54.0" prefWidth="184.0" text="Department">
+         <font>
+            <Font name="Book Antiqua" size="29.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Button fx:id="viewSpecificStuBtn" layoutX="10.0" layoutY="166.0" mnemonicParsing="false" onAction="#mainSpecificDepMenuButton" prefHeight="34.0" prefWidth="118.0" text="View Students">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="viewSpecificTeachBtn" layoutX="10.0" layoutY="387.0" mnemonicParsing="false" onAction="#mainSpecificDepMenuButton" prefHeight="34.0" prefWidth="118.0" text="View Teachers">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="viewSpecificStaffBtn" layoutX="10.0" layoutY="607.0" mnemonicParsing="false" onAction="#mainSpecificDepMenuButton" prefHeight="34.0" prefWidth="102.0" text="View Staff">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

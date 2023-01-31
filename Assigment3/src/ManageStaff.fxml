@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLStaff">
+   <children>
+      <Label layoutX="29.0" layoutY="31.0" prefHeight="26.0" prefWidth="50.0" text="ID:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="88.0" text="Name:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="141.0" text="Age:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="190.0" text="Gender:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="248.0" layoutY="87.0" prefHeight="18.0" prefWidth="50.0" text="Duty:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="237.0" layoutY="136.0" prefHeight="26.0" prefWidth="58.0" text="Workload:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnAddStaff" layoutX="484.0" layoutY="85.0" mnemonicParsing="false" onAction="#addStaff" prefHeight="38.0" prefWidth="90.0" text="Add">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="286.0" layoutY="22.0" prefHeight="44.0" prefWidth="109.0" text="Staff">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToStaffMenuBtn" layoutX="644.0" layoutY="420.0" mnemonicParsing="false" onAction="#mainStaffButton" prefHeight="43.0" prefWidth="66.0" text="Back">
+         <font>
+            <Font name="Book Antiqua Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="248.0" layoutY="191.0" prefHeight="26.0" prefWidth="50.0" text="DeptID:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnUpdateStaff" layoutX="613.0" layoutY="86.0" mnemonicParsing="false" onAction="#mainStaffButton" prefHeight="38.0" prefWidth="90.0" text="Update">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="refreshStaffBtn" layoutX="644.0" layoutY="305.0" mnemonicParsing="false" onAction="#mainStaffButton" prefHeight="43.0" prefWidth="66.0" text="Refresh">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfIDStaff" layoutX="66.0" layoutY="31.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="tfNameStaff" layoutX="67.0" layoutY="84.0" />
+      <TextField fx:id="tfAgeStaff" layoutX="67.0" layoutY="136.0" />
+      <TextField fx:id="tfGenderStaff" layoutX="67.0" layoutY="185.0" />
+      <TextField fx:id="tfDutyStaff" layoutX="307.0" layoutY="84.0" />
+      <TextField fx:id="tfWorkloadStaff" layoutX="307.0" layoutY="137.0" />
+      <TextField fx:id="tfDeptChoiceStaff" layoutX="307.0" layoutY="192.0" />
+      <TableView fx:id="tvStaff" layoutX="25.0" layoutY="233.0" prefHeight="231.0" prefWidth="596.0">
+         <columns>
+            <TableColumn fx:id="idColStaff" prefWidth="51.19997978210449" text="ID" />
+            <TableColumn fx:id="nameColStaff" prefWidth="97.59993743896484" text="Name" />
+            <TableColumn fx:id="ageColStaff" prefWidth="51.2000732421875" text="Age" />
+            <TableColumn fx:id="genderColStaff" prefWidth="76.7999267578125" text="Gender" />
+            <TableColumn fx:id="dutyColStaff" prefWidth="72.800048828125" text="Duty" />
+            <TableColumn fx:id="workloadColStaff" prefWidth="82.39996337890625" text="Workload" />
+            <TableColumn fx:id="salaryColStaff" prefWidth="88.00003051757812" text="Salary" />
+            <TableColumn fx:id="departmentIDColStaff" prefWidth="77.60003662109375" text="DeptID" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnDeleteStaff" layoutX="599.0" layoutY="173.0" mnemonicParsing="false" onAction="#mainStaffButton" prefHeight="37.0" prefWidth="90.0" text="Delete">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSearchStaff" layoutX="484.0" layoutY="173.0" mnemonicParsing="false" onAction="#mainStaffButton" prefHeight="38.0" prefWidth="90.0" text="Search">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

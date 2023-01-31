@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLTeacher">
+   <children>
+      <Label layoutX="204.0" layoutY="22.0" prefHeight="54.0" prefWidth="184.0" text="Teacher List">
+         <font>
+            <Font name="Book Antiqua" size="29.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Button fx:id="backToTeachMenuBtn" layoutX="670.0" layoutY="403.0" mnemonicParsing="false" onAction="#mainTeachButton" prefHeight="37.0" prefWidth="90.0" text="Back">
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="refreshTeachBtn" layoutX="32.0" layoutY="90.0" mnemonicParsing="false" onAction="#mainTeachButton" prefHeight="37.0" prefWidth="90.0" text="Refresh">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnSearchViewTeach" layoutX="670.0" layoutY="91.0" mnemonicParsing="false" onAction="#mainTeachButton" prefHeight="26.0" prefWidth="90.0" text="Search">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="tfIDSearchTeach" layoutX="498.0" layoutY="94.0" />
+      <Label layoutX="450.0" layoutY="93.0" prefHeight="26.0" prefWidth="26.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvTeach" layoutX="28.0" layoutY="142.0" prefHeight="298.0" prefWidth="623.0">
+         <columns>
+            <TableColumn fx:id="idColTeach" prefWidth="41.60000705718994" text="ID" />
+            <TableColumn fx:id="nameColTeach" prefWidth="107.20000839233398" text="Name" />
+            <TableColumn fx:id="ageColTeach" prefWidth="39.20001220703125" text="Age" />
+            <TableColumn fx:id="genderColTeach" prefWidth="67.20001220703125" text="Gender" />
+            <TableColumn fx:id="specialtyColTeach" prefWidth="79.20001220703125" text="Specialty" />
+            <TableColumn fx:id="degreeColTeach" text="Degree" />
+            <TableColumn fx:id="salaryColTeach" prefWidth="75.199951171875" text="Salary" />
+            <TableColumn fx:id="departmentIDColTeach" prefWidth="57.60003662109375" text="DeptID" />
+            <TableColumn fx:id="isDeanTeach" prefWidth="72.0" text="Dean" />
+         </columns>
+         <effect>
+            <InnerShadow height="2.0" radius="0.5" width="2.0" />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

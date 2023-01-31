@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLStudent">
+   <children>
+      <Label layoutX="30.0" layoutY="40.0" prefHeight="26.0" prefWidth="50.0" text="ID:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="96.0" text="Name:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="147.0" text="Age:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="197.0" text="Gender:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="235.0" layoutY="94.0" prefHeight="18.0" prefWidth="50.0" text="Course:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="231.0" layoutY="142.0" prefHeight="26.0" prefWidth="58.0" text="Semester:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnAddStu" layoutX="479.0" layoutY="100.0" mnemonicParsing="false" onAction="#mainStudentButton" prefHeight="37.0" prefWidth="90.0" text="Add">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font></Button>
+      <Label layoutX="271.0" layoutY="20.0" prefHeight="40.0" prefWidth="132.0" text="Student">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToStuMenuBtn" layoutX="626.0" layoutY="453.0" mnemonicParsing="false" onAction="#mainStudentButton" prefHeight="43.0" prefWidth="76.0" text="Back">
+         <font>
+            <Font name="Book Antiqua Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfDeptChoiceStu" layoutX="301.0" layoutY="192.0" />
+      <Label layoutX="235.0" layoutY="191.0" prefHeight="26.0" prefWidth="50.0" text="DeptID:">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnUpdateStu" layoutX="611.0" layoutY="98.0" mnemonicParsing="false" onAction="#mainStudentButton" prefHeight="38.0" prefWidth="90.0" text="Update">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfIDStu" layoutX="68.0" layoutY="40.0" />
+      <TextField fx:id="tfNameStu" layoutX="68.0" layoutY="91.0" />
+      <TextField fx:id="tfAgeStu" layoutX="68.0" layoutY="143.0" />
+      <TextField fx:id="tfGenderStu" layoutX="68.0" layoutY="192.0" />
+      <TextField fx:id="tfCourseStu" layoutX="301.0" layoutY="91.0" />
+      <TextField fx:id="tfSemesterStu" layoutX="301.0" layoutY="143.0" />
+      <TableView fx:id="tvStu" layoutX="14.0" layoutY="238.0" prefHeight="259.0" prefWidth="574.0">
+         <columns>
+            <TableColumn fx:id="idColStu" prefWidth="59.99999809265137" text="ID" />
+            <TableColumn fx:id="nameColStu" prefWidth="121.59998321533203" text="Name" />
+            <TableColumn fx:id="ageColStu" minWidth="7.199951171875" prefWidth="60.79998779296875" text="Age" />
+            <TableColumn fx:id="genderColStu" prefWidth="81.60003662109375" text="Gender" />
+            <TableColumn fx:id="courseColStu" prefWidth="71.20001220703125" text="Course" />
+            <TableColumn fx:id="semesterColStu" prefWidth="101.60003662109375" text="Semester" />
+            <TableColumn fx:id="departmentIdColStu" prefWidth="79.19992065429688" text="DeptID" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnDeleteStu" layoutX="611.0" layoutY="185.0" mnemonicParsing="false" onAction="#mainStudentButton" prefHeight="38.0" prefWidth="90.0" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSearchStu" layoutX="479.0" layoutY="186.0" mnemonicParsing="false" onAction="#mainStudentButton" prefHeight="38.0" prefWidth="90.0" text="Search">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="refreshStuBtn" layoutX="611.0" layoutY="331.0" mnemonicParsing="false" onAction="#mainStudentButton" prefHeight="33.0" prefWidth="90.0" text="Refresh">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+The JUnit would not work, I kept getting this error, so the test would never run
+
+/*
+C:\Users\ben_1\AppData\Local\NetBeans\Cache\12.4\executor-snippets\junit.xml:187: The following error occurred while executing this line:
+
+C:\Users\ben_1\AppData\Local\NetBeans\Cache\12.4\executor-snippets\junit.xml:164: Java returned: 8
+*/
+
+I still wrote the code for it anyway, but I'm not 100 percent sure if it works because it would not run.
